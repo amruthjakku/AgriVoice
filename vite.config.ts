@@ -9,8 +9,8 @@ export default defineConfig({
   },
   server: {
     host: '0.0.0.0',
-    port: 5000,
-    strictPort: true,
+    port: 3000,
+    strictPort: false,
     hmr: {
       clientPort: 443,
       host: process.env.REPLIT_DEV_DOMAIN,

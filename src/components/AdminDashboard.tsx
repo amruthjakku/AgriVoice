@@ -10,8 +10,6 @@ export const AdminDashboard = () => {
   const [dailyData, setDailyData] = useState<{ date: string; count: number }[]>([]);
   const [intentData, setIntentData] = useState<{ intent: string; count: number }[]>([]);
   const [loading, setLoading] = useState(true);
-  const [dateFrom, setDateFrom] = useState('');
-  const [dateTo, setDateTo] = useState('');
 
   useEffect(() => {
     loadData();
@@ -21,7 +19,7 @@ export const AdminDashboard = () => {
     setLoading(true);
     try {
       const [interactionsData, queriesData, langData, dailyStats, intents] = await Promise.all([
-        analyticsService.getInteractions(dateFrom, dateTo),
+        analyticsService.getInteractions(),
         analyticsService.getTopQueries(10),
         analyticsService.getLanguageDistribution(),
         analyticsService.getDailyInteractions(7),

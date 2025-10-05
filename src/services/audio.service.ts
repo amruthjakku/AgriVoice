@@ -4,7 +4,7 @@ import { llmService } from './llm.service';
 import { ttsService } from './tts.service';
 import { supabaseService } from './supabase.service';
 
-const USE_REAL_APIS = import.meta.env.VITE_USE_REAL_APIS === 'true';
+
 
 class AudioService {
   private processingQueue = new Map<string, Promise<void>>();

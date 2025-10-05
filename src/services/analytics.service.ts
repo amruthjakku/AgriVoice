@@ -15,6 +15,8 @@ class AnalyticsService {
       intent: 'pest_management',
       tags: ['pest', 'crop_protection'],
       status: 'completed',
+      audio_duration: 3,
+      processing_time: 2340,
       created_at: new Date(Date.now() - 86400000 * 2).toISOString(),
       updated_at: new Date(Date.now() - 86400000 * 2).toISOString()
     },
@@ -28,6 +30,8 @@ class AnalyticsService {
       intent: 'irrigation',
       tags: ['irrigation', 'wheat'],
       status: 'completed',
+      audio_duration: 5,
+      processing_time: 1820,
       created_at: new Date(Date.now() - 86400000 * 1).toISOString(),
       updated_at: new Date(Date.now() - 86400000 * 1).toISOString()
     },
@@ -41,6 +45,8 @@ class AnalyticsService {
       intent: 'fertilizer',
       tags: ['fertilizer', 'rice'],
       status: 'completed',
+      audio_duration: 4,
+      processing_time: 1980,
       created_at: new Date(Date.now() - 3600000 * 5).toISOString(),
       updated_at: new Date(Date.now() - 3600000 * 5).toISOString()
     },
@@ -54,6 +60,8 @@ class AnalyticsService {
       intent: 'weather',
       tags: ['weather'],
       status: 'completed',
+      audio_duration: 2,
+      processing_time: 1650,
       created_at: new Date(Date.now() - 3600000 * 2).toISOString(),
       updated_at: new Date(Date.now() - 3600000 * 2).toISOString()
     },
@@ -67,6 +75,8 @@ class AnalyticsService {
       intent: 'market_price',
       tags: ['market', 'tomato'],
       status: 'completed',
+      audio_duration: 6,
+      processing_time: 2100,
       created_at: new Date(Date.now() - 3600000).toISOString(),
       updated_at: new Date(Date.now() - 3600000).toISOString()
     }
